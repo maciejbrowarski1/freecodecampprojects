@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<title>First project - Survey Form</title>
+	</head>
+	<body>
+		<div id="header">
+			<h1 id="title">First project - Survey Form</h1>
+			<p id="description">description</p>
+		</div>
+		<form id="survey-form">
+			<label id="name-label" for="name" class="lab">Name</label>
+			<input id="name" type="text" placeholder="name" required>
+			<label id="email-label" for="email" class="lab">Email</label>
+			<input id="email" type="email" placeholder="email" required>
+			<label id="number-label" for="number" class="lab">Number</label>
+			<input id="number" type="number" placeholder="number" min="3" max="6">
+			<select id="dropdown">
+				<option value="first">first</option>
+				<option value="second">second</option>
+			</select>
+			<div class="lab">
+				<input id="first-name" type="radio" name="name" value="first">
+				<label for="first-name">First name</label>
+			</div>
+			<div class="lab">
+				<input id="last-name" type="radio" name="name" value="last" class="lab2">
+				<label for="last-name">Last name</label>
+			</div>
+			<div class="lab">
+				<input id="first-check" type="checkbox" name="first" value="first">
+				<label for="first-check">First check</label>
+			</div>
+			<div class="lab">
+				<input id="second-check" type="checkbox" name="second" value="second">
+				<label for="second-check">Second check</label>
+			</div>
+			<textarea></textarea>
+			<input id="submit" type="submit" value="Submit">
+		</form>
+	</body>
+</html>
